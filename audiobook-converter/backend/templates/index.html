@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words to Waves</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#FFF8E1] text-[#3E2723] font-sans min-h-screen flex items-center justify-center relative">
+
+    <!-- Striped Background -->
+    <div class="absolute inset-0 bg-[linear-gradient(45deg,_#FFEB3B_25%,_#FF7043_25%,_#FF7043_50%,_#FFEB3B_50%,_#FFEB3B_75%,_#FF7043_75%)] bg-cover bg-center opacity-50"></div>
+
+    <!-- Main Content -->
+    <div class="relative bg-white shadow-lg rounded-xl p-8 w-full max-w-lg text-center backdrop-blur-md bg-opacity-90">
+        <h1 class="text-4xl font-bold text-[#3E2723] mb-4">Words to Waves</h1>
+        
+        <!-- Tagline -->
+        <p class="text-lg font-medium text-[#5D4037] mb-6"><i>Hear the observations <3</i></p>
+
+        <!-- Styled File Input -->
+        <label for="fileInput" class="cursor-pointer font-semibold bg-[#FFEB3B] text-[#3E2723] py-3 px-6 rounded-lg font-medium shadow-md hover:bg-[#FFD600] transition inline-block">
+            Select a File
+        </label>
+        <input type="file" id="fileInput" class="hidden" />
+
+        <div class="mt-6">
+            <button id="convertButton" class="bg-[#FF7043] text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-[#FF5722] transition">
+                Convert to Audio
+            </button>
+        </div>
+
+        <p id="status" class="mt-4 text-[#5D4037] font-medium"></p>
+
+        <audio id="audioPlayer" controls class="mt-6 w-full hidden"></audio>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+<!--impooooooo
+for later use obv, DUH
+Tailwind Classes Breakdown:
+Body:
+
+bg-[#FFF8E1]: Sets the background color to Light Beige.
+text-[#3E2723]: Sets the primary text color to Rich Brown.
+font-sans: Uses a sans-serif font for a modern look.
+p-6: Adds padding to the body.
+Heading (<h1>):
+
+text-4xl: Makes the heading large.
+font-semibold: Adds a semi-bold weight to the text.
+mb-6: Adds margin below the heading.
+File Input:
+
+px-4 py-2: Adds padding inside the input.
+border border-[#3E2723]: Adds a border with the Rich Brown color.
+rounded-md: Applies rounded corners to the input box.
+mb-4: Adds margin below the input box.
+w-full: Ensures the input takes up the full width.
+Button:
+
+bg-[#FF7043]: Sets the background color to Soft Red-Orange.
+text-white: Makes the text inside the button white.
+px-6 py-3: Adds padding to the button.
+rounded-md: Adds rounded corners.
+text-lg: Makes the text size larger.
+hover:bg-[#FF5722]: Changes the button's color when hovered.
+transition: Adds a smooth transition effect for hover states.
+Status Text:
+
+mt-4: Adds margin at the top.
+text-[#5D4037]: Sets the secondary text color to Brownish Grey.
+Audio Player:
+
+mt-6: Adds margin at the top.
+w-full: Ensures the audio player takes up the full width.
+-->
